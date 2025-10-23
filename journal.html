@@ -11,6 +11,17 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	  <link rel="stylesheet" href="assets/css/main.css" />
 	  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Force normal case for headings on this page -->
+		  <style>
+		    /* Cover common Phantom selectors that uppercase headings */
+		    h1, h2, h3, h4, h5, h6,
+		    #main h2, .inner h2, header.major h2,
+		    .major h2, h2.major {
+		      text-transform: none !important;
+		      letter-spacing: normal !important;
+		    }
+		  </style>
 	</head>
 	
 	<body class="is-preload">
@@ -103,6 +114,7 @@
 	</body>
 
 </html>
+
 
 
 
