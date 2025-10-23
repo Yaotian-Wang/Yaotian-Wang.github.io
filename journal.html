@@ -14,14 +14,21 @@
 
 		<!-- Force normal case for headings on this page -->
 		  <style>
-		    /* Cover common Phantom selectors that uppercase headings */
-		    h1, h2, h3, h4, h5, h6,
-		    #main h2, .inner h2, header.major h2,
-		    .major h2, h2.major {
-		      text-transform: none !important;
-		      letter-spacing: normal !important;
-		    }
-		  </style>
+		  /* Override Phantom uppercase headings */
+		  h1, h2, h3, h4, h5, h6,
+		  #main h2, .inner h2, header.major h2,
+		  .major h2, h2.major {
+			text-transform: none !important;
+			letter-spacing: normal !important;
+		  }
+		
+		  /* Make h2 same size and weight as <font size="+2"><b>...</b> */
+		  h2 {
+			font-size: 1.25em !important;  /* roughly equivalent to +2 */
+			font-weight: bold !important;
+			margin-bottom: 0.75em;
+		  }
+		</style>
 	</head>
 	
 	<body class="is-preload">
@@ -114,6 +121,7 @@
 	</body>
 
 </html>
+
 
 
 
